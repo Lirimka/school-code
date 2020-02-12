@@ -32,7 +32,6 @@ body {
     position: relative;
     box-sizing: border-box;
     width: 50%;
-    size: 50%;
     height: 50%;
     border-radius: 20%;
     background-color: #030105;
@@ -75,20 +74,20 @@ body {
     display: inline-block;
     color: #ffffff;
     background: #00000055;
-    padding: 8px 16px;
+    padding: px 16px;
     margin: 16px;
     height: 64px;
     width: 64px;
 }
-.links-block>a.link-vk{
-    background:  url () no-repeat 50% / contein;
+.links-block>a.link-vk {
+    background: url(https://brand.vkforms.ru/static/media/logo_color_198.231228dd.svg) no-repeat 50% / contain;
 }
-.links-block>a.link-instagram{
-    background:  url () no-repeat 50% / contein;
+.links-block>a.link-facebook {
+    background: url(https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png) no-repeat 50% / contain;
 }
-.links-block>a.link-yutube{
-    background:  url () no-repeat 50% / contein;
+.links-block>a.link-instagram {
+    background: url(https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=64) no-repeat 50% / contain;
 }
-.links-block>a.link-fecbook{
-    background:  url () no-repeat 50% / contein;
+.links-block>a.link-Youtube {
+    background: url(https://habrastorage.org/getpro/habr/post_images/359/cf7/470/359cf747058e2c30c2d5c663ba1a0817.png) no-repeat 50% / contain;
 }
