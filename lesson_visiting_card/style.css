@@ -1,39 +1,43 @@
+:root {
+    --color-primary: #529de4;
+    --color-secondary: #76fe1b;
+    --color-accent: #cc9622;
+    --color-text-dark: #ca1a1a;
+    --color-text-light: #ffffff;}
 body {
     font-size: 16px;
     padding: 0px;
     margin: 0px;
 }
-.short-info {
+.short-info{
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1.62fr;
-    grid-template-rows: 1fr 1fr auto;
-    grid-template-areas:
-        "photo name"
-        "photo about"
-        "links links";
     overflow: hidden;
     height: 100vh;
-    background: #000000;
     margin: 0px;
+    grid-template-columns:  4fr 3fr 1fr;
+    grid-template-rows: 3fr 1fr ;
+    grid-template-areas: 
+        "name  photo links"
+        "about about about ";  
 }
 .photo-block {
     display: flex;
-    grid-area: photo;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 16px;
-    background: #174eb455;
+    background: #215bb3;
 }
 .photo-image {
     position: relative;
     box-sizing: border-box;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #5b17b455;
-    background-image: url(https://avatars1.githubusercontent.com/u/7059877?s=460&v=4);
-    background-size: cover;
+    width: 50%;
+    size: 50%;
+    height: 50%;
+    border-radius: 20%;
+    background-color: #030105;
+    background-image: url(https://sun9-11.userapi.com/c858124/v858124874/10b6fd/l3gJvO2gv1Q.jpg);
+    background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -41,82 +45,50 @@ body {
     position: relative;
     grid-area: name;
     display: flex;
-    align-items: flex-end;
-    padding: 16px;
-    font-size: 250%;
-    background: #215bb355;
-    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 300%;
+    background: #215bb3;
+    color: var(--color-secondary);
 }
 .about-me-block {
     position: relative;
     grid-area: about;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start ;
+    justify-content: center;
     padding: 16px;
-    font-size: 120%;
-    background: #3664bb55;
+    font-size: 160%;
+    background: #3665bb;
     color: #eeeeee;
 }
 .links-block {
+    grid-area: links;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    grid-area: links;
-    padding: 16px;
-    background: #197ca355;
+    background: var(--color-secondary);
 }
-.anchor-link {
+.links-block>a {
     display: inline-block;
     color: #ffffff;
     background: #00000055;
     padding: 8px 16px;
     margin: 16px;
+    height: 64px;
+    width: 64px;
 }
-
-.long-info {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 100vh;
-    margin: 0px;
-    background: yellow;
-    color: #214594;
+.links-block>a.link-vk{
+    background:  url () no-repeat 50% / contein;
 }
-
-
-@media (max-width: 480px) {
-    .photo-image {
-        width: 120px;
-        height: 120px;
-    }
-    .name-block {
-        font-size: 180%;
-        padding: 8px;
-    }
-    .about-me-block {
-        font-size: 100%;
-        padding: 8px;
-    }
-    .anchor-link {
-        margin: 8px;
-    }
+.links-block>a.link-instagram{
+    background:  url () no-repeat 50% / contein;
 }
-@media (max-width: 320px) {
-    .photo-image {
-        width: 64px;
-        height: 64px;
-    }
-    .name-block {
-        font-size: 120%;
-        padding: 8px;
-    }
-    .about-me-block {
-        font-size: 100%;
-        padding: 8px;
-    }
-    .anchor-link {
-        margin: 8px;
-    }
+.links-block>a.link-yutube{
+    background:  url () no-repeat 50% / contein;
+}
+.links-block>a.link-fecbook{
+    background:  url () no-repeat 50% / contein;
 }
