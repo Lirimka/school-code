@@ -22,6 +22,7 @@ body {
         "about about about ";  
 }
 .photo-block {
+    grid-area: photo;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,4 +91,30 @@ body {
 }
 .links-block>a.link-Youtube {
     background: url(https://habrastorage.org/getpro/habr/post_images/359/cf7/470/359cf747058e2c30c2d5c663ba1a0817.png) no-repeat 50% / contain;
+}
+@media (max-width: 650px) {
+    .short-info {
+       position: relative;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: auto auto auto auto;
+       grid-template-areas: 
+       "photo"
+       "name"
+       "about"
+       "links";
+       height: auto;
+       min-height: 100vh;
+       background: var(--color-primary);
+       color: var(--color-text-light);
+       margin: 0px;
+    }
+    .photo-image {
+        position: relative;
+        box-sizing: border-box;
+        width: 200px;
+        height: 200px;
+    }
+
+
 }
