@@ -92,6 +92,22 @@ body {
 .links-block>a.link-Youtube {
     background: url(https://habrastorage.org/getpro/habr/post_images/359/cf7/470/359cf747058e2c30c2d5c663ba1a0817.png) no-repeat 50% / contain;
 }
+html {
+    scroll-behavior: smooth;
+}
+.page-block{
+    min-height:100vh;
+    height: auto;
+}
+.link-next {
+ display: inline-flex;
+ position: relative;
+ align-self: flex-end;
+ background:  var(--color-accent);
+ color: var(--color-secondary);
+ padding: 5px 10px;
+ text-decoration: none;
+}
 @media (max-width: 650px) {
     .short-info {
        position: relative;
