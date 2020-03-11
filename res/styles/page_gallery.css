@@ -1,0 +1,64 @@
+#page-gallery {
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #083be4;
+}
+#page-gallery .card{
+    background-color: #ffffff;
+    margin: 16px;
+    border-radius: 8px;
+    padding: 8px;
+}
+#page-gallery .card .photo{
+    width: 200px;
+    height: 300px;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#page-gallery .card::after{
+    content:"";
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: -10px;
+    width: 56px;
+    height: 56px;
+    background-image: url(./../../res/img/knopka.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#page-gallery .card:nth-child(3n+1)::after{left: 0%;}
+#page-gallery .card:nth-child(3n+1){
+    transform: rotatez(1deg);
+}
+#page-gallery .card:nth-child(3n+2)::after{left: 20%;}
+#page-gallery .card:nth-child(3n+2){
+    transform: rotatez(-2deg);
+}
+#page-gallery .card:nth-child(3n+3)::after{left: 60%;}
+#page-gallery .card:nth-child(3n+3){
+    transform: rotatez(3deg);
+}
+
+
+#page-gallery .card:nth-child(1) .photo{
+    background-image: url(./../../res/img/volcanoes-wallpapers-hd-68687-8130880.png);
+}
+#page-gallery .card:nth-child(2) .photo{
+    background-image:  url(./../../res/img/Sky\ Anime\ Landscape\ 04.jpg);
+}
+#page-gallery .card:nth-child(3) .photo{
+    background-image:  url(./../../res/img/Sky\ Anime\ Landscape\ 04.jpg);
+}
+#page-gallery .card:nth-child(4) .photo{
+    background-image:  url(./../../res/img/Sky\ Anime\ Landscape\ 04.jpg);
+}
+#page-gallery .card:nth-child(5) .photo{
+    background-image:  url(./../../res/img/www.GetBg.net_Space_Blue_planet_on_a_pink_background_galaxy_098768_.jpg);
+}
