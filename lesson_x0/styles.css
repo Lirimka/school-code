@@ -117,8 +117,9 @@ body {
     80% {
         color: #27446100;
     }
-    to {
-        color: #274461;
+    to { 
+        font-size: 40px;
+        color: #f00808;
         background: #e8f6ffaa;
         top: 0px; 
         bottom: 0px; 

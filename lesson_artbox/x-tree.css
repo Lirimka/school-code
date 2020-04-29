@@ -66,12 +66,10 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transition: background-color,  /* перечисляем свойства, которые будут изменяться с анимацией */
-                height, 
-                width, 
+    transition: width, 
                 margin-left, 
                 margin-top, 
                 left, 
-                top;
-    transition-duration: 1s; /* задаем длительность анимации */
+               
+    transition-duration: 0.5 s
 }

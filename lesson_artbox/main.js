@@ -12,55 +12,50 @@ startAll();
 function createBalls(count) {
     let ballsCount = count;
 
-    // удаляются все имеющиеся шары
     let balls = document.querySelectorAll(".ball");
     balls.forEach(item => item.remove());
-    // создаются новые шары
+    
     let xTreeContainer = document.querySelector(".xtree-container");
     for (let i = 0; i < ballsCount; i++) {
         let ball = document.createElement('div');
         ball.className = "ball"
         xTreeContainer.appendChild(ball);
     }
-
-    // получаются вновь созданные шары
     balls = document.querySelectorAll(".ball");
     configureBalls(balls);
     return balls;
 }
-
-// задаются размеры и полодение шаров
 function configureBalls(balls) {
     for (let i = 0; i < balls.length; i++) {
-        let size = 10 + Math.floor(10 * Math.random())  // вычисляется размер шара
-        let y = (0.1 + 0.75 * i / balls.length) * 100;   // вычисляется отступ гара от верха
-        let dx = 0.7 * y * (Math.random() - 0.5);       // вычисляется смещение от центра по горизонтали
-        let x = 50 + dx; // назначается отступ от левого края в процентах
+        let size = 10 + Math.floor(10 * Math.random()) 
+        let y = (0.1 + 0.75 * i / balls.length) * 100;  
+        let dx = 0.7 * y * (Math.random() - 0.5);      
+        let x = 50 + dx; 
 
-        let ball = balls[i]; // получаем ссылку на шар по индексу
-        let style = ball.style // получаем ссылку на стиль шара
-        style.top = y + "%"; // задаем смещение свершу
-        style.left = x + "%"; // задаем смещение слева
-        style.height = size + "px"; // задаем высоту шара
-        style.width = size + "px"; // задаем ширину шара
-        style.marginTop = -0.5 * size + "px"; // центрируем шар относительно себя по вертикал 
-        style.marginLeft = -0.5 * size + "px"; // центрируем шар относительно себя по горизонтали
+        let ball = balls[i]; 
+        let style = ball.style 
+        style.top = y + "%"; 
+        style.left = x + "%"; 
+        style.height = size + "px"; 
+        style.width = size + "px"; 
+        style.marginTop = -0.5 * size + "px";  
+        style.marginLeft = -0.5 * size + "px"; 
     }
 };
 
 function startAll() {
     startXtreePlay();
-    // запускаем анимации шаров
+    
     balls.forEach(ball => {
-        // время задержки в милисекундах
-        let ballTimeout = 1000 * (1 + 4 * Math.random());
+        
+        let ballTimeout = 100 * (1 + 4 * Math.random());
         startBallPlay(ball, ballTimeout)
     });
 };
 
 function startXtreePlay() {
-    let timeout = 1000; // время задержки в милисекундах
-    changeXtreeColor(); // вызывается метд изменения шаров
+    let timeout = 100; 
+    changeXtreeColor(); 
     setTimeout(startXtreePlay, timeout);
 };
 
@@ -73,21 +68,21 @@ function changeXtreeColor() {
     });
 }
 
-// Задаем функцию старта изменений
+
 function startBallPlay(ball, timeout) {
-    // let timeout = 1000; // время задержки
-    updateBall(ball); // вызывается метд изменения шаров
-    setTimeout(startBallPlay, timeout, ball, timeout); // вызывается отложенное выполнение функции startBallPlay с параметрами
+   
+    updateBall(ball);
+    setTimeout(startBallPlay, timeout, ball, timeout);
 };
 
-// Создаем функцию для изменения свойств цвета шара
+
 function updateBall(ball) {
     if (!ball) {
         return;
     }
 
-    let colorIndex = Math.floor((colors.length - 1) * Math.random()); // определяем индекс цвета
-    let color = colors[colorIndex]; // получаем значение цвета по индексу
-    let style = ball.style // получаем ссылку на стиль шара
-    style.backgroundColor = color; // задаем цвет шара
+    let colorIndex = Math.floor((colors.length - 1) * Math.random()); 
+    let color = colors[colorIndex]; 
+    let style = ball.style 
+    style.backgroundColor = color; 
 }

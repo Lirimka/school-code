@@ -17,7 +17,7 @@ function initGameBoard() {
     board = ["","","","","","","","",""];
     currentPlayer = playerX;
 
-    messageView.textContent = "Game started. First is Player X";
+    messageView.textContent = "Игра началась. Ходит игрок X";
 
     blockView.textContent = "";
     setBlockViewVisible(false);
@@ -110,16 +110,16 @@ function changePalayer() {
         currentPlayer = playerX;
     }
 
-    messageView.textContent = `Step is Player ${currentPlayer.toUpperCase()}`
+    messageView.textContent = `Следуйщий ${currentPlayer.toUpperCase()}`
 }
 
 function onWin() {
-    blockView.textContent = `Winner is ${currentPlayer.toUpperCase()}`;
+    blockView.textContent = `Победил ${currentPlayer.toUpperCase()}`;
     setBlockViewVisible(true);
 }
 
 function onWithoutWinner() {
-    blockView.textContent = "Without winner";
+    blockView.textContent = "Ничья";
     setBlockViewVisible(true);
 }
 

@@ -1,6 +1,6 @@
 #page-gallery {
     position: relative;
-    height: auto;
+    height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,17 +48,32 @@ background-repeat: no-repeat;
 
 
 #page-gallery .card:nth-child(1) .photo{
-    background-image: url(./../../res/img/volcanoes-wallpapers-hd-68687-8130880.png);
+    background-image: url(./../../res/img/0.png);
 }
 #page-gallery .card:nth-child(2) .photo{
-    background-image:  url(./../../res/img/Sky\ Anime\ Landscape\ 04.jpg);
+    background-image:  url(./../../res/img/1.jpg);
 }
 #page-gallery .card:nth-child(3) .photo{
-    background-image:  url(./../../res/img/Sky\ Anime\ Landscape\ 04.jpg);
+    background-image:  url(./../../res/img/6.png);
 }
 #page-gallery .card:nth-child(4) .photo{
-    background-image:  url(./../../res/img/Sky\ Anime\ Landscape\ 04.jpg);
+    background-image:  url(./../../res/img/3.png);
 }
 #page-gallery .card:nth-child(5) .photo{
-    background-image:  url(./../../res/img/www.GetBg.net_Space_Blue_planet_on_a_pink_background_galaxy_098768_.jpg);
+    background-image:  url(./../../res/img/Screenshot_5.png);
+}
+#page-gallery .card:nth-child(6) .photo{
+    background-image:  url(./../../res/img/Screenshot_3.png);
+}
+#page-gallery .card:nth-child(7) .photo{
+    background-image:  url(./../../res/img/Screenshot_4.png);
+}
+#page-gallery .card:nth-child(8) .photo{
+    background-image:  url(./../../res/img/7.png);
+}
+#page-gallery .card:nth-child(9) .photo{
+    background-image:  url(./../../res/img/8.png);
+}
+#page-gallery .card:nth-child(10) .photo{
+    background-image:  url(./../../res/img/04.jpg);
 }

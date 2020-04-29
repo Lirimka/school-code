@@ -11,6 +11,12 @@
         "name  photo links"
         "about about about ";  
 }
+.info-block{
+    position: relative;
+    height: 100vh;
+    background: #083be4;
+    align-items: top;
+}
 .photo-block {
     grid-area: photo;
     display: flex;
@@ -26,7 +32,7 @@
     height: 50%;
     border-radius: 20%;
     background-color: #030105;
-    background-image: url(https://sun9-11.userapi.com/c858124/v858124874/10b6fd/l3gJvO2gv1Q.jpg);
+    background-image: url(./../../res/img/10.png);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -127,4 +133,32 @@ html {
     }
 
 
+}
+.idTop {
+    position: fixed;
+    z-index: 9999; 
+    bottom: 0%;
+    right: 0%; 
+    background: #7db9e8; 
+    opacity: .6;
+    color: #fff; 
+    padding: 10px; 
+    margin: 5px 15px 15px 5px;
+   }
+   .idTop:hover {
+    opacity: 1;}
+.scerl {
+    position: relative;
+left: 16%;
+
+}
+
+#page-links a.lesson {
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px 0px;
+    border-left: #18f504 solid 4px;
+    color: #fbff02;
+    background: #50505015;
 }
